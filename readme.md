@@ -1,3 +1,0 @@
-# diretório directory
-
-sla kkkkk
