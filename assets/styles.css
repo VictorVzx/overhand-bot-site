@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+  /* Cores Primárias (Azul/Roxo - Foco e Ação) */
+  --cor-principal: #5865f2; /* Azul Discord Principal */
+  --cor-secundaria: #8c90ff; /* Azul/Roxo Claro para Hover */
+  --cor-acao: #1abc9c;    /* Verde Vibrante para Sucesso ou Botões */
+  --cor-alerta: #ff3860;   /* Vermelho para Erros ou Exclusão */
+
+  /* Cores de Fundo (Escuras/Neutras) */
+  --fundo-principal: #1e1e28; /* Fundo Escuro Principal (quase preto) */
+  --fundo-secundario: #2a2a37; /* Fundo de Cartões, Headers ou Sidebars */
+  --fundo-input: #3e3e4a;     /* Fundo de Inputs ou Áreas de Foco */
+
+  /* Cores de Texto (Claras) */
+  --texto-principal: #ffffff;  /* Texto Principal (Branco Puro) */
+  --texto-secundario: #c9c9d4; /* Texto Secundário, Descrições ou Labels */
+  --texto-link: var(--cor-principal); /* Links Usam a cor principal */
+
+  /* Tipografia e Sombras (Opcional) */
+  --fonte-principal: 'Inter', sans-serif;
+  --sombra-leve: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background: linear-gradient(90deg, var(--cor-principal, var(--cor-secundaria)));
+    color: var(--texto-principal);
+    font-family: var(--fonte-principal);
+}
+
+.navegacao {
+    padding: 1rem 2rem;
+    display: fixed;
+    background-color: var(--cor-secundaria);
+    box-shadow: var(--sombra-leve);
+    text-justify: center;
+}
+
+.itemsNav {
+    display: flex;
+    list-style-type: none;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inicio-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+.imagem-profile {
+    border-radius: 250px;
+    width: 50%;
+    height: auto;
+    box-shadow: 0 0 8px black;
+    
+}
+
+.paragrafo-card {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--texto-principal);
+    padding-right: 3rem;
+    padding-left: 3rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--cor-secundaria);
+}
+
+.paragrafo-caixa {
+    display: flex;
+    padding-top: 0.5rem;
+    justify-content: center;
+}
+
+.projetos {
+    padding: 6rem 2rem;
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--cor-secundaria);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.projetos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.projetos-card:hover {
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px ) scale(1.03);
+}
+
+.projetos-imagem {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caixa-textos-projeto {
+    padding: 1.5rem;
+}
+
+.paragrafo-projetos {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+}
+
+.info-projetos {
+    margin-bottom: 5px;
+    text-shadow: 0 0 4px var(--secundaria);
+}
+
+.servidor-botao {
+    background-color: var(--cor-acao);
+    padding: 8px 12px;
+    
+}
+
